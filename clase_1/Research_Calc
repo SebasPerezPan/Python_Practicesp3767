@@ -18,7 +18,7 @@ tripq = int(input("Cuantos viajes son requeridos para la investigacion?"))
 tripp = int(input("Cuantas personas del equipo tienen que viajar?"))
 triph = int(input("Cual es el valor por tiquete?"))
 tripd = int(input("Cual es el valor por dia de alojamiento?"))
-trip_total = int((tripq*tripp)*(triph+tripd))
+trip_total = int((tripq*tripp*(triph)+tripp*tripd*trip_days))
 
 equipo = int(input("Cual es el valor total de los equipos que van a ser usados en la investigacion?"))
 subtotal = trip_total + equipo + assist_total + invest_total
