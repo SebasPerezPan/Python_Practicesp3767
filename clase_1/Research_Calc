@@ -4,14 +4,14 @@ investqu = int(input("Cuántos investigadores van a hacer parte de tu investigac
 investho = int(input("Cuánto va a ser el pago estandar por horas de los investigadores?"))
 investhwk = int(input("Cuantas horas semanales trabajaran los investigadores?"))
 investmo = int(input("Por cuantos meses se extendera el contrato?"))
-invest_total = int(investqu*investhwk*investmo*investho)
+invest_total = int(investqu*investhwk*(investmo*4)*investho)
 print(f"El costo total de los investigadores es de $ {invest_total}. ")
 
 assistqu = int(input("Cuántos asistentes van a hacer parte de tu investigación?"))
 assistho = int(input("Cuánto va a ser el pago estandar por horas de los asistentes?"))
 assistwk = int(input("Cuantas horas semanales trabajaran los asistentes?"))
 assistmo = int(input("Por cuantos meses se extendera el contrato?"))
-assist_total = int(assistqu*assistho*assistwk+assistmo)
+assist_total = int(assistqu*assistho*assistwk*(assistmo*4))
 print(f"El costo total de los asistentes es de $ {assist_total}. ")
 
 tripq = int(input("Cuantos viajes son requeridos para la investigacion?"))

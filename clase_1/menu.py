@@ -1,5 +1,6 @@
 import math
-
+# ready = input("Estas listo para comenzar? Y/N")
+#     while != "Y
 menu = int(input("Selecciona una aplicacion. 1. Teorema de Pitagoras. 2. Lista de Precios. 3. Contador de dias. 4. Calculadora de Interes compuesto y simple.\n"))
 
 if menu == 1: 
