@@ -21,7 +21,7 @@ if menu == 2:
     resultado = var_a + var_b + var_c + var_d + var_e
     resultado = resultado + resultado*0.19
     print(f"Lista de precios {list}")
-    print(f"El total de la compra es de ${resultado} dias.")
+    print(f"El total de la compra es de ${resultado}.")
 
 if menu == 3: 
     print("Elegiste el contador de dias.")
