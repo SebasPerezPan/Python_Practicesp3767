@@ -5,7 +5,7 @@ ja_a = int(input("Ingrese la primera cifra."))
 ja_b = int(input("Ingrese la segunda cifra."))
 fam = 0
 punto = 0
-if (ja_a or ja_b) > 9 or (ja_a or ja_b) < 1:
+if (ja_a or ja_b) > 9 or ja_a <= 0:
     print("Error. No puede continuar.")
 else:
     print(f"El numero seleccionado es {ja_a}{ja_b}.")

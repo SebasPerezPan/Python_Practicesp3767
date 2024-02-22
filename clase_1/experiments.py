@@ -26,4 +26,3 @@ for number in list:
         prime.append(number)
 
 print(prime)
-
