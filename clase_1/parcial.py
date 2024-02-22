@@ -179,3 +179,7 @@ zau = ((5*ar_x + ((((ar_y)**ar_x-1)**1/2)/(ar_y+2*ar_x)))**1/2)**3
 zad =(((ar_x**2)**3)/(((ar_y)**3)*(ar_x+1))) - 3 * ((3)**1/2+(ar_x-1)**1/4)
 z = zau - zad
 print(z)
+
+
+a = math.sqrt((8),(3))
+print(a)
