@@ -21,4 +21,4 @@ print("Traductor de Temperatura")
 temp = int(input("Ingrese valor de la temperatura"))
 measure = input("ingrese C para grados Celsius, o F para grados Farenheit.")
 
-if (measure != c or measure != C):
+#if (measure != c or measure != C):
