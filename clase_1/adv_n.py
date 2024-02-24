@@ -1,6 +1,5 @@
 print("Adivina el digito de 2 cifras.")
 
-
 ja_a = int(input("Ingrese la primera cifra."))
 ja_b = int(input("Ingrese la segunda cifra."))
 fam = 0
