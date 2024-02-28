@@ -33,9 +33,16 @@ else:
     
 print("Blackjack!")
 
-carta_a = random.randint(1,11)
-carta_b = random.randint(1,11)
-carta_c = random.randint(1,11)
-total_cartas = carta_a + carta_b
+monto = int(input("Cual es el monto total que traes?"))
 
-print(total_cartas)
+carta_c = random.randint(1,11)
+
+
+while monto > 0:
+    apuesta= int(input("Cuanto deseas apostar en la mano?"))
+    monto -= apuesta
+    cartas = random.randint(1,11) + random.randint(1,11)
+    jug_a == random.randint(1,21)
+    print(f"Sacaste un total de {cartas}")
+    carta_c = int("Quieres una tercera carta?\n 1. Si\n 2. No.")
+    if carta_c    
