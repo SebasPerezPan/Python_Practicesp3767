@@ -37,12 +37,44 @@ monto = int(input("Cual es el monto total que traes?"))
 
 carta_c = random.randint(1,11)
 
+import random
 
-while monto > 0:
-    apuesta= int(input("Cuanto deseas apostar en la mano?"))
-    monto -= apuesta
-    cartas = random.randint(1,11) + random.randint(1,11)
-    jug_a == random.randint(1,21)
-    print(f"Sacaste un total de {cartas}")
-    carta_c = int("Quieres una tercera carta?\n 1. Si\n 2. No.")
-    if carta_c    
+print("Blackjack!")
+
+cartas_n = 0
+cartas = random.randint(1,11)
+
+jug_a = random.randint(1,21)
+oportunidades = 2
+while cartas_n != 2 and cartas <= 21:
+    print(f"De momento, el total es {cartas}")
+    carta_ad = int(input("Quieres una carta?\n 1. Si\n 2. No."))
+    if carta_ad == 1:
+        cartas_n += 1
+        cartas = cartas + random.randint(1,11)
+    else:
+        cartas_n = 2
+
+
+print(f"Sacaste {cartas} y la maquina {jug_a}")
+if jug_a == 21 or cartas == 21:
+    print("Puntaje maximo!")
+
+if cartas > 21: 
+    print("Perdiste!")
+        
+elif jug_a == cartas and cartas < 21:
+    print("Empataste.")
+elif jug_a > cartas:
+    print("Perdiste!")
+elif cartas > jug_a:
+    print("Ganaste!")
+
+##while monto > 0:
+##    apuesta= int(input("Cuanto deseas apostar en la mano?"))
+##    monto -= apuesta
+##    cartas = random.randint(1,11) + random.randint(1,11)
+##    jug_a == random.randint(1,21)
+##    print(f"Sacaste un total de {cartas}")
+##    carta_c = int("Quieres una tercera carta?\n 1. Si\n 2. No.")
+##    if carta_c    
