@@ -1,3 +1,5 @@
+import math
+
 print("Calculadora de Casa")
 
 ##Se van a definir variables para cantidades de cada cosa, ya sea banhos o cuartos.
@@ -10,95 +12,95 @@ dim_hab_c = 0
 dim_hab_b = 0
 if n_hab >= 3:
     n_hab = 3
-    n_hab_aa = int(input("Cual es el valor de ancho del primer cuarto?")) 
-    n_hab_al = int(input("Cual es el valor de largo del primer cuarto?"))
-    if n_hab_aa >= 10:
-        n_hab_aa = 10
-    elif n_hab_aa <= 2:
-        n_hab_aa = 2
-    if n_hab_al > 10:
-        n_hab_al = 10
-    elif n_hab_al <= 2:
-        n_hab_al = 2
-    dim_hab_a = n_hab_aa * n_hab_al
+    hab_aa = int(input("Cual es el valor de ancho del primer cuarto?")) 
+    hab_al = int(input("Cual es el valor de largo del primer cuarto?"))
+    if hab_aa >= 10:
+        hab_aa = 10
+    elif hab_aa <= 2:
+        hab_aa = 2
+    if hab_al > 10:
+        hab_al = 10
+    elif hab_al <= 2:
+        hab_al = 2
+    dim_hab_a = hab_aa * hab_al
     
     print(f"El area del cuarto es de {dim_hab_a} m")
     
-    n_hab_ba = int(input("Cual es el valor de ancho del segundo cuarto?")) 
-    n_hab_bl = int(input("Cual es el valor de largo del segundo cuarto?"))
+    hab_ba = int(input("Cual es el valor de ancho del segundo cuarto?")) 
+    hab_bl = int(input("Cual es el valor de largo del segundo cuarto?"))
     
-    if n_hab_ba >= 10:
-        n_hab_ba = 10
-    elif n_hab_ba <= 2:
-        n_hab_ba = 2
-    if n_hab_bl > 10:
-        n_hab_bl = 10
-    elif n_hab_bl <= 2:
-        n_hab_bl = 2
-    dim_hab_b = n_hab_ba * n_hab_bl
+    if hab_ba >= 10:
+        hab_ba = 10
+    elif hab_ba <= 2:
+        hab_ba = 2
+    if hab_bl > 10:
+        hab_bl = 10
+    elif hab_bl <= 2:
+        hab_bl = 2
+    dim_hab_b = hab_ba * hab_bl
     
     print(f"El area del cuarto es de {dim_hab_b} m")
 
-    n_hab_ca = int(input("Cual es el valor de ancho del tercer cuarto?")) 
-    n_hab_cl = int(input("Cual es el valor de largo del tercer cuarto?"))
+    hab_ca = int(input("Cual es el valor de ancho del tercer cuarto?")) 
+    hab_cl = int(input("Cual es el valor de largo del tercer cuarto?"))
     
-    if n_hab_ca >= 10:
-        n_hab_ca = 10
-    elif n_hab_ca <= 2:
-        n_hab_ca = 2
-    if n_hab_cl > 10:
-        n_hab_cl = 10
-    elif n_hab_cl <= 2:
-        n_hab_cl = 2
-    dim_hab_c = n_hab_ca * n_hab_cl
+    if hab_ca >= 10:
+        hab_ca = 10
+    elif hab_ca <= 2:
+        hab_ca = 2
+    if hab_cl > 10:
+        hab_cl = 10
+    elif hab_cl <= 2:
+        hab_cl = 2
+    dim_hab_c = hab_ca * hab_cl
 
     print(f"El area del cuarto es de {dim_hab_c} m")
 
 
 elif n_hab == 2:
-    n_hab_aa = int(input("Cual es el valor de ancho del primer cuarto?")) 
-    n_hab_al = int(input("Cual es el valor de largo del primer cuarto?"))
-    if n_hab_aa >= 10:
-        n_hab_aa = 10
-    elif n_hab_aa <= 2:
-        n_hab_aa = 2
-    if n_hab_al > 10:
-        n_hab_al = 10
-    elif n_hab_al <= 2:
-        n_hab_al = 2
-    dim_hab_a = n_hab_aa * n_hab_al
+    hab_aa = int(input("Cual es el valor de ancho del primer cuarto?")) 
+    hab_al = int(input("Cual es el valor de largo del primer cuarto?"))
+    if hab_aa >= 10:
+        hab_aa = 10
+    elif hab_aa <= 2:
+        hab_aa = 2
+    if hab_al > 10:
+        hab_al = 10
+    elif hab_al <= 2:
+        hab_al = 2
+    dim_hab_a = hab_aa * hab_al
     
     print(f"El area del cuarto es de {dim_hab_a} m")
     
-    n_hab_ba = int(input("Cual es el valor de ancho del segundo cuarto?")) 
-    n_hab_bl = int(input("Cual es el valor de largo del segundo cuarto?"))
+    hab_ba = int(input("Cual es el valor de ancho del segundo cuarto?")) 
+    hab_bl = int(input("Cual es el valor de largo del segundo cuarto?"))
     
-    if n_hab_ba >= 10:
-        n_hab_ba = 10
-    elif n_hab_ba <= 2:
-        n_hab_ba = 2
-    if n_hab_bl > 10:
-        n_hab_bl = 10
-    elif n_hab_bl <= 2:
-        n_hab_bl = 2
-    dim_hab_b = n_hab_ba * n_hab_bl
+    if hab_ba >= 10:
+        hab_ba = 10
+    elif hab_ba <= 2:
+        hab_ba = 2
+    if hab_bl > 10:
+        hab_bl = 10
+    elif hab_bl <= 2:
+        hab_bl = 2
+    dim_hab_b = hab_ba * hab_bl
     
     print(f"El area del cuarto es de {dim_hab_b} m")
 
     
     
 elif n_hab <= 1:
-    n_hab_aa = int(input("Cual es el valor de ancho del primer cuarto?")) 
-    n_hab_al = int(input("Cual es el valor de largo del primer cuarto?"))
-    if n_hab_aa >= 10:
-        n_hab_aa = 10
-    elif n_hab_aa <= 2:
-        n_hab_aa = 2
-    if n_hab_al > 10:
-        n_hab_al = 10
-    elif n_hab_al <= 2:
-        n_hab_al = 2
-    dim_hab_a = n_hab_aa * n_hab_al    
+    hab_aa = int(input("Cual es el valor de ancho del primer cuarto?")) 
+    hab_al = int(input("Cual es el valor de largo del primer cuarto?"))
+    if hab_aa >= 10:
+        hab_aa = 10
+    elif hab_aa <= 2:
+        hab_aa = 2
+    if hab_al > 10:
+        hab_al = 10
+    elif hab_al <= 2:
+        hab_al = 2
+    dim_hab_a = hab_aa * hab_al    
     
     print(f"El area del cuarto es de {dim_hab_a} m")
 
@@ -108,21 +110,31 @@ dim_habs = int(dim_hab_c + dim_hab_a + dim_hab_b)
 
 print(f"Entendido, el numero de habitaciones es: {n_hab} para un total de: {dim_habs} m.")
 ##Continuamos con los banhos. Si el usuario no elije una de las dos opciones alrededor del area social, se le asignara el banho regular. 
-n_ban = int(input("Cuantos banñs tendra la casa?"))
-ban_typ = int(input("Que categoria tienen? 1. Premium. 2. Regulares"))
-dim_ban = 0
+n_ban = int(input("Cuantos baños tendra la casa?"))
+n_ban_prem = int(input("Cuantos de estos baños quieres que sean Premium?"))
+
+ban_prem = 9
+ban_reg = 5
+n_ban_reg = 0
+
+if n_ban_prem >= n_ban:
+    print("El resultado del calculo sera inpreciso.")
+
 if n_ban >= 3:
-    n_ban = 3
+    n_ban =3 
 elif n_ban <= 1:
     n_ban = 1
 
-if ban_typ == 1:
-    dim_ban = n_ban * 9
-else:
-    dim_ban = n_ban * 5
+if n_ban_prem >= 3:
+    n_ban_prem =3
+elif n_ban_prem <= 1:
+    n_ban_prem = 1
 
+n_ban_reg = n_ban - n_ban_prem
 
-print(f"El area del banho es de {dim_ban} m")
+dim_ban = ban_prem * n_ban_prem + (n_ban_reg * ban_reg)
+
+print(f"El area del baños es de {dim_ban} m")
 
 #Area social. Si el usuario no elije una de las dos opciones alrededor del area social, se le asignara el 
 # area social regular. 
@@ -135,7 +147,7 @@ if ar_social == 2:
     dim_social = 40
 else:
     dim_social = 20
-
+print(f"El tamaño del area social es de :{dim_social} m")
 #Patio. 
 
 dim_patio = 0
@@ -164,36 +176,46 @@ gar_size = int(input("El garaje es: 1. Doble. 2. Sencillo."))
 
 if garaje == 1:
     if gar_size == 1:
-        gar_dim = 20
+        dim_gar = 20
     elif gar_size == 2:
-        gar_dim = 10
-print(f"El tamaño del garaje es de {gar_dim} m.")
+        dim_gar = 10
+print(f"El tamaño del garaje es de {dim_gar} m.")
 
-dim_tot_a = dim_habs + dim_patio + dim_ban + dim_social
-dim_tot_b = dim_tot_a * 1.25
-dim_tot_c = dim_tot_b + gar_dim
-dim_ma = 100
-dim_tot_b_g = dim_tot_b 
-if dim_ma >= dim_tot_b_g:
-    val_tot = 8000000 * dim_tot_b
-elif dim_ma <= dim_tot_b_g:
-    val_tot = 9000000 * dim_tot_b
-val_gar = gar_dim * 5000000
-val_tot_a = val_tot + val_gar
+dim_a = dim_habs + dim_patio + dim_ban + dim_social
+
+sub_dim_total = dim_a * 1.25
+
+dim_total = sub_dim_total + dim_gar
+
+dim_mx = 100
+
+##dim_tot_c = dim_tot_b + gar_dim
+
+if dim_mx >= sub_dim_total:
+    val_tot = 8000000 * sub_dim_total
+elif dim_mx <= sub_dim_total:
+    val_tot = 9000000 * sub_dim_total
+
+val_gar = dim_gar * 5000000
+
+val = val_tot + val_gar
+
 val_tc = 1000000000
-if val_tot_a >= val_tc:
-    val = val_tot_a * 0.95
-val = val_tot_a
-print(f"El tamaño total en m es de: {dim_tot_c}.")
+
+if val >= val_tc:
+    val = val * 0.95
+
+print(f"El tamaño total en m es de: {dim_total}.")
 print(f"El valor total de la casa sera de: $ {val:,.2f}.")
 
 print("Punto 2")
 
-ar_x = float(input("Defina un valor para x"))
-ar_y = float(input("Defina un valor para y"))
+x = int(input("Defina un valor para x"))
+y = float(input("Defina un valor para y"))
+
 ##Dividi toda la fraccion en dos variables, zau y zad. Podia usar math, pero me parecio mas humano simplemente convertir las raices. ar_x sera x, ar_y sera y.
 
-za = (5*ar_x + ((ar_y**((ar_x-1)/2))/(ar_y + 2*x)))**3/2
-zb =((ar_x**6)/((((ar_y)**3)*ar_x)+1)) - 3 * ((3)**1/2+(ar_x-1)**1/4)
-z =  za - zb
-print(z)
+resultado =(pow ((math.sqrt(5*x) + math.sqrt((math.sqrt(pow(y,(x-1)))) / (y + (2 * x)))),3)
+)  - ( (pow(x,6)) / ((pow(y,3)) * x) + 1) - 3 * ((math.sqrt(3)) + math.sqrt(math.sqrt(x-1)))
+
+print(resultado)
