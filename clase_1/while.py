@@ -70,6 +70,28 @@ elif jug_a > cartas:
 elif cartas > jug_a:
     print("Ganaste!")
 
+print("m.c.m")
+
+numero = int(input("Numero"))
+puntaje = 0
+
+while puntaje == 0 and numero != 1:
+    a = int(input("Por que numero lo quieres dividir?"))
+    b = numero % a
+    if b != 0:
+        puntaje = 1
+        print(f"No puede ser dividido por {a}.")
+    else: 
+        numero = numero / a
+    print(f"Tenemos entonces {numero}")    
+
+if numero == 1:
+    print("Es la expresion minima.")
+
+
+
+
+
 ##while monto > 0:
 ##    apuesta= int(input("Cuanto deseas apostar en la mano?"))
 ##    monto -= apuesta
