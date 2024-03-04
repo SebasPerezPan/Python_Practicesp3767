@@ -26,36 +26,73 @@ if c == True:
 else:
     print(f"{a} no es un numero primo.")
 
+  
+  
+s = int(input("Agregue el numero a descomponer."))
 
-print("Parte 2.\nPrueba Taller Knuth")
+p = s
 
-a = 2
-b = a
+r = False
+
 d = 2
-s = []
 
-while b != 1:
-    if a / d == 1:
+divisoresb = [1]
+
+while p != 1:
+    if s / d == 1:
         c = True
         
-    if b % d == 0:
-        b = b / d
-        divisores.append(d)
+    if p % d == 0:
+        p = p / d
+        divisoresb.append(d)
         d = 2
-
-s = range(1,100)
-num_rang = [s]
-prime = []
-
-for a in s
-while a < 10:
-    
-    if b / d == 1:
-        s.append(a)
-        d = 2
-    elif b / d != 1:
-        a = a + 1
     else:
         d += 1
 
-print(s)
+
+print(f"El numero {s} debe ser dividido por {divisoresb}")
+if c == True:
+    print(f"{s} es un numero primo.")
+else:
+    print(f"{s} no es un numero primo.")
+
+mcm = set (divisoresb) | set (divisores)
+
+print(mcm)
+  
+  
+  
+  
+  
+  
+  
+    # a = 2
+# s = a
+# d = 2
+# s = []
+
+# while b != 1:
+#     if a / d == 1:
+#         c = True
+        
+#     if b % d == 0:
+#         b = b / d
+#         divisores.append(d)
+#         d = 2
+
+# s = range(1,100)
+# num_rang = [s]
+# prime = []
+
+# for a in s
+# while a < 10:
+    
+#     if b / d == 1:
+#         s.append(a)
+#         d = 2
+#     elif b / d != 1:
+#         a = a + 1
+#     else:
+#         d += 1
+
+# print(s)
