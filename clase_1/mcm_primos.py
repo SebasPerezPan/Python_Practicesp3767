@@ -60,6 +60,21 @@ mcm = set (divisoresb) | set (divisores)
 
 print(mcm)
   
+#primos. La logica es que f es el divisor. Mientras que f != n el programa corre, o hasta que descu
+
+
+for n in range(2,101):
+    
+    c = True
+    f = 2
+    while n % f != 0:
+        f += 1
+    
+    if c == False:
+        print(f"{n} No es primo")
+    elif c == True:
+        print(f"{n} Es primo.")
+        
   
   
   
