@@ -16,13 +16,10 @@ print(f"El mcm es : {mcm}")
 
 n = int(input("Ingrese el numero que desea saber si es primo."))
 f = 2
-while f == n  or c != True:
-    if f < n and n % f == 0:
-        c = False
-    else:
-        f += 1
+while n % f != 0:
+    f +=1
 
-if c == False:
-    print("No es primo")
+if n == f:
+    print(" primo.")
 else:
-    print("Es primo.")
+    print("no Primo.")
